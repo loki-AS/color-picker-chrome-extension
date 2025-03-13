@@ -1,54 +1,22 @@
-# React + TypeScript + Vite
+# 🎨 Color Picker - Pick & Copy Colors from Any Website  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Color Picker** is a lightweight and free **Chrome Extension** that lets you instantly pick, extract, and copy **HEX & HSLA color codes** from any website. Perfect for **designers, developers, and digital artists**!  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **✨ Features**  
+✅ **One-Click Color Picker** – Extract colors from text, images, or backgrounds  
+✅ **Copy HEX & HSLA Codes** – Click to copy color codes effortlessly  
+✅ **Lightweight & Fast** – No lag, no unnecessary permissions  
+✅ **Dark Mode Support** – Works seamlessly in any theme  
+✅ **Clipboard Copy Confirmation** – Shows a ✔️ tick icon when copied  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## **🖥️ How to Use?**  
+1. **Open any website** where you want to pick a color.  
+2. Click on the **Color Picker** extension icon.  
+3. Hover over any element to **select a color**.  
+4. Click to **copy the HEX or HSLA code** (✔️ Tick appears on copy).  
+5. Paste the copied color into your project!  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
